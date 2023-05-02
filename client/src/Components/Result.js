@@ -9,7 +9,7 @@ const Result = (props) => {
       <ul className="princes">
         {sortedLabels.map((label) => (
           <li key={label}>
-            <span>
+            <span style={{color:'white'}}>
               <img
                 className={`img ${
                   label === mostMatched.label ? "selected" : null
@@ -21,7 +21,7 @@ const Result = (props) => {
                 }
                 alt={label}
               />
-              <p className="name">{label}</p>
+              <p className="name" style={{color:'white'}} >{label}</p>
             </span>
           </li>
         ))}

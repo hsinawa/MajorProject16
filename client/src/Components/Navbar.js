@@ -49,17 +49,20 @@ function Navbar() {
           <DrawerComponent />
         ) : (
           <div className={classes.navlinks}>
-            <Link to="/predict" className={classes.link}>
+                 <Link to="/" className={classes.link}>
               Home
             </Link>
-            <Link to="/" className={classes.link}>
-              About
+
+            
+            <Link to="/predict" className={classes.link}>
+              Demo
             </Link>
+       
             <Link to="/" className={classes.link}>
               Contact
             </Link>
             <Link to="/" className={classes.link}>
-              FAQ
+              About
             </Link>
           </div>
         )}

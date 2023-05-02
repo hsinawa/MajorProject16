@@ -116,22 +116,75 @@ const EdgeTech = () =>{
                     borderRadius:'12px',
                     backgroundColor:'red',
                     color:'white',
-                    fontSize:'30px',
+                    fontSize:'25px',
                     fontWeight:'bold',
                     padding:'10px 20px 10px 20px',
-                    width:'18%'
-                }} > Try Demo </p>
+                    width:'30%'
+                }} > <a href='/predict' style={{textDecoration:'none', color:'white'}} > Try Demo </a> </p>
             </p>
           </Grid>
           <Grid item xs={6}>
             <img
               src="https://cdn.dribbble.com/users/32512/screenshots/4787574/light_ai_design_by_gleb.gif"
               style={{
-                width: "100%",
-                height: "auto",
+                width: "90%",
+                height: "400px",
               }}
             />
           </Grid>
+        </Grid>
+      </Box>
+
+        </div>
+    )
+}
+
+
+const CrashReport = () =>{
+
+
+    return (
+        <div>
+            <Box sx={{ width: "100%" }}>
+        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+        
+        
+        <Grid item xs={6}>
+            <img
+              src="https://sentiance.com/wp-content/uploads/2022/10/Group-781.svg"
+              style={{
+                width: "90%",
+                height: "400px",
+              }}
+            />
+          </Grid>
+        
+        
+          <Grid item xs={6}>
+          <p style={{ marginLeft: "60px", width: "80%" }}>
+              <h2 style={{ color: "red" }}>Includes everything in detail</h2>
+              <h1 style={{ color: "black" }}>Crash Reporting</h1>
+              <p style={{ color: "black" }}> Investigate your crash claims with real-world data from Sentiance's crash reports. The crash forensics reports include:</p>
+                <ul style={{ color: "black" }}>
+                    <li>Crash time and location</li>
+                    <li>Driving events before, during, and after the crash</li>
+                    <li>And much more</li>
+                </ul>
+                <p style={{ color: "white" }}> Is a crash due to bad weather, road type, time of day, traffic congestion, or trip context? We can identify relevant risk factors to accelerate your claim processing. </p>
+             
+<br/><br/>
+<p style={{
+                    borderRadius:'12px',
+                    backgroundColor:'red',
+                    color:'white',
+                    fontSize:'25px',
+                    fontWeight:'bold',
+                    padding:'10px 20px 10px 20px',
+                    width:'35%'
+                }} > Get In Touch </p>
+            </p>
+          </Grid>
+      
         </Grid>
       </Box>
 
@@ -175,6 +228,8 @@ const HomeScreen = (props) => {
       <CrashImpacts />
       <br /><br /><br />
       <EdgeTech />
+      <br /><br />
+      <CrashReport />
     </div>
   );
 };
