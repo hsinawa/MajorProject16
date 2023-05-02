@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(20),
     borderBottom: "1px solid transparent",
     "&:hover": {
-      color: "yellow",
+      color: "#ADD8E6",
       borderBottom: "1px solid white",
     },
   },
