@@ -58,10 +58,10 @@ function Navbar() {
               Demo
             </Link>
        
-            <Link to="/" className={classes.link}>
+            <Link to="/update" className={classes.link}>
               Contact
             </Link>
-            <Link to="/" className={classes.link}>
+            <Link to="/details" className={classes.link}>
               About
             </Link>
           </div>

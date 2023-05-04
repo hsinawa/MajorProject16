@@ -5,6 +5,7 @@ import useInterval from '@use-it/interval';
 import { BrowserRouter , Route,Routes } from "react-router-dom";
 import Result from './Result';
 import Chart from './Chart';
+import axios from "axios";
 
 let classifier;
 const Prediction = () =>{
@@ -44,11 +45,17 @@ const Prediction = () =>{
       setResult([]);
     }
 
-console.log('The resul is', result[0])
 
-if(result[0]?.label==='Accident'  && result[0]?.confidence > 0.85 )
+
+if(result[0]?.label==='Safe'  && result[0]?.confidence > 0.85 )
 {
-  alert('Calling SOS')
+  axios.post('/api/accident' ).then( (res)=>{
+    console.log('Safe Result')
+  } ).catch((err)=>{
+    console.log('Error Detected')
+  })
+  window.location.href='/calling'
+  //alert('Calling SOS')
 }
   
     return (

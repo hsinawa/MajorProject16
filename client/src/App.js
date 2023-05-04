@@ -10,6 +10,8 @@ import "./App.css";
 import HomeScreen from "./Screens/HomeScreen";
 import Prediction from "./Components/Predictions";
 import NotFound from "./Screens/UnderContruction";
+import Contact from "./Screens/Contact";
+import About from "./Screens/About";
 
 let classifier;
 
@@ -26,6 +28,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomeScreen/>} />
         <Route path="/predict" element={<Prediction/>} />
+        <Route path="/update" element={<Contact/>} />
+        <Route path="/details" element={<About/>} />
         <Route path="*" element={<NotFound/>} />
   
       </Routes>
