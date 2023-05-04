@@ -12,6 +12,7 @@ import Prediction from "./Components/Predictions";
 import NotFound from "./Screens/UnderContruction";
 import Contact from "./Screens/Contact";
 import About from "./Screens/About";
+import HelpComing from "./Screens/Callsent";
 
 let classifier;
 
@@ -30,6 +31,8 @@ function App() {
         <Route path="/predict" element={<Prediction/>} />
         <Route path="/update" element={<Contact/>} />
         <Route path="/details" element={<About/>} />
+        <Route path="/calling" element={<About/>} />
+        <Route path="/callsent" element={<HelpComing/>} />
         <Route path="*" element={<NotFound/>} />
   
       </Routes>

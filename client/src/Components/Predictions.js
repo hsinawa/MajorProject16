@@ -49,11 +49,7 @@ const Prediction = () =>{
 
 if(result[0]?.label==='Safe'  && result[0]?.confidence > 0.85 )
 {
-  axios.post('/api/accident' ).then( (res)=>{
-    console.log('Safe Result')
-  } ).catch((err)=>{
-    console.log('Error Detected')
-  })
+ 
   window.location.href='/calling'
   //alert('Calling SOS')
 }

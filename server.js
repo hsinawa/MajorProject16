@@ -9,9 +9,6 @@ const app = express();
 // //zbwxvkpfjigjxant
 
 
-const accountSid = 'AC25e57c35ff0fa2cffd8b8dc7668fb3a0';
-const authToken = '192373951eacc9fa465323f9df44bb9a';
-const client = require('twilio')(accountSid, authToken);
 
 
 
@@ -28,7 +25,7 @@ app.post('/api/accident', ()=>{
     console.log('API is here')
     client.messages
     .create({
-        body: `Alert! ${req.body.nameofvictim} has met with an accident at the given cordinates Latitude:${req.body.latitude} Longitude :${req.body.longitude}  `,
+        body: `Alert! Awanish has met with an accident at the given cordinates Latitude:28.5746° N, Longitude : 77.3136° E  `,
         from: '+13204139222',
         to: '+919599150262'
     })
